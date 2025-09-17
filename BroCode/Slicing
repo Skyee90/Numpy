@@ -1,0 +1,53 @@
+
+%pip install numpy
+import numpy as np
+
+array = np.array([1, 2, 3, 4, 5])
+array = array * 2
+
+print(array)
+print(type(array))
+
+
+
+# MultiDimensionalArray:- 
+
+  #Onedimension:
+#array = np.array(["A", "B", "C"])
+
+  #Twodimension:
+array = np.array([["A", "B", "C"],
+                ["C", "D", "E"]])
+print(array.ndim)     
+
+  #Three Dimensaion:
+array = np.array([[["A", "B", "C"], ["C", "D", "E"]],
+                  [["A", "B", "C"], ["C", "D", "E"]]])
+print(array.ndim)
+print(array.shape)
+
+array = np.array([[["A", "B", "C"], ["C", "D", "E"]],
+                  [["E", "F", "G"], ["U", "N", "M"]],
+                  [["H", "I", "J"], ["J", "K", "L"]]],)
+print(array.ndim)
+print(array.shape)
+print(array[2,1,0])
+
+word = array[1,0,1] + array[1,1,0] + array[0,1,0] + array[2,1,1]
+print(word)
+
+
+array = np.array([[1,2,3,4],
+                [5,6,7,8],
+                [9,10,11,12],
+                [13,14,15,16]])
+                
+# print(array[:, ::-2]) # : this sign at first mean that we are selecting all the row....
+
+print(array[0:2, 0:2]) # here first section is deciding the roew and second section is deciding the column.....
+
+
+
+
+
+
