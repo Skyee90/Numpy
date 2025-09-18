@@ -1,0 +1,43 @@
+                            # SCALER ARITHMETIC
+
+%pip install numpy
+
+import numpy as np
+
+array = np.array([1, 2, 3])
+print(array + 1)
+print(array - 2)
+print(array * 3)
+print(array / 4)
+
+print(array ** 5)
+print()
+print()
+                            # Vectorize Math Function
+array = np.array([2, 3, 4])
+print(np.sqrt(array))
+array = np.array([2.22, 4.56, 9.99])
+print(np.round(array)) # if need to calculate the downward value then i have to use np.floor method an if i need to go for upward valuees i have to use np.ceil
+
+print(np.pi)
+
+radius = np.array([1, 2, 3])
+print(f"The are of the cirlcle is {np.pi * radius ** 2}")
+print()
+print()
+array1 = np.array([1, 2, 3])
+array2 = np.array([4, 5, 6])
+print(array1 + array2)
+print(array1 - array2)
+print(array1 * array2)
+print(array1 / array2)
+print(array1 ** array2)
+print()
+print()
+
+                      # Comparison Operators
+scores = np.array([12, 54, 45, 51, 65, 77, 78])
+print(scores >= 50)
+
+
+
